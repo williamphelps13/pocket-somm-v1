@@ -31,7 +31,7 @@ https://github.com/williamphelps13/pocket-somm
 
 ## Project Spec
 
-[Project Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
+[Link to Turing School of Software Project Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
 ## Instructions
 - 
@@ -55,11 +55,11 @@ To run the application on a local machine:
 
 ## Learning Goals and Project Reflections
 
-### Learning Goals
+### -Learning Goals
 
-### Challenges
+### -Challenges
 
-### Wins 
+### -Wins 
 
 ## Future Additions
 
