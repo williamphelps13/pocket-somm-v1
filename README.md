@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+## Pocket-Somm - Solo React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Table of Contents
+- [Deployed Site](#deployed-site)
+- [Github Repo](#github-repo)
+- [Demo](#demo)
+- [Project Spec](#project-spec)
+- [User Instructions](#app-operation-instructions)
+- [Setup Instructions](#setup-instructions)
+- [Learning Goals and Reflections](#learning-goals-project-reflection)
+- [Future Additions](#future-additions)
+- [Project Managers](#project-managers)
 
-## Available Scripts
+## Deployed Site - 
+https://pocket-somm.surge.sh/
 
-In the project directory, you can run:
+## GitHub Repo - 
+https://github.com/williamphelps13/pocket-somm
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Main Page]()
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Varietal Page]() 
 
-### `npm test`
+![Recipe Fetch Error]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Gif]()
 
-### `npm run build`
+[Gif Mobile]()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Spec
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Project Spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instructions
+- 
 
-### `npm run eject`
+## Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To run the application on a local machine:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Clone down repository 
+- `cd` into repository
+- Run ``` npm install ```
+- Run ``npm start``
+- Webpage will open in seperate browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technologies Used: 
+ - React
+ - HTML
+ - CSS
+ - Cypress
+ - Router
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Learning Goals and Project Reflections
 
-## Learn More
+### Learning Goals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Challenges
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Wins 
 
-### Code Splitting
+## Future Additions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Project Managers
+- Scott Ertmer
+- Kayla Gordon
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###### This project was created for [Turing School of Software and Design](https://turing.io/)
+###### 2021/09/27
+**[Back to top](#table-of-contents)**
