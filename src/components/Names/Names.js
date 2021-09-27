@@ -39,6 +39,12 @@ const Names = ({ filteredVarietals }) => {
         </section>
       }
     
+      {selectedReds.length > 0 &&
+          <section>
+            <p>{selectedReds.length} / 17</p>
+            {selectedReds}
+          </section>
+        }
     </>
   )
 }
