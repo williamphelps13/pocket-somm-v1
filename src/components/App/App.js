@@ -1,4 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import { Link, Switch, Route } from 'react-router-dom'
-import { varietalDescriptions } from '../../data/varietal-descriptions'
+import { Switch, Route } from 'react-router-dom'
+import Filter from '../Filter/Filter'
+import Names from '../Names/Names'
+import Info from '../Info/Info'
+
+const App = () => {
+  const [filteredVarietals, setFilteredVarietals] = useState([])
+
+  
+
+export default App
