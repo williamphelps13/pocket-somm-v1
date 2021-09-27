@@ -19,7 +19,11 @@ const App = () => {
             </section>
           }
         />
-        
+        <Route exact path={'/:varietalName'} 
+          render={({match}) =>
+              <Info varietalName={match.params.varietalName}/>
+          }
+        />
     </main>
   )
 }
