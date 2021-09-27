@@ -46,7 +46,23 @@ const Recipes = ({ chosenVarietal }) => {
     setRecipes(recipes)
   }
 
-  
+  return (
+    <>
+      <p>Favorite Pairings - Click to See Recipe Category (Currently {currentKeyword}) </p>
+      <ul>
+        {chosenVarietal.pairingPossibilities.map((pairingKeyword, index) => {
+          return (
+            <li key={index}> 
+              <button value={pairingKeyword} onClick={event => getPairings(pairingKeyword)}>
+                {pairingKeyword}
+              </button>
+            </li>
+          )  
+        })}
+      </ul>
+      
+    </>
+  )
 }
 
 export default Recipes
