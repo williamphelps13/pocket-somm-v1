@@ -20,6 +20,16 @@ const Names = ({ filteredVarietals }) => {
     return createLinks(filteredByColor)
   }
 
+  const createLinks = (filteredByColor) => {
+    return filteredByColor.map((name, index) => {
+      return (
+        <Link to={`/${name}`} key={index}>
+          <button>{name}</button>
+        </Link>
+      )
+    })
+  }
+
 }
 
 export default Names
