@@ -14,6 +14,12 @@ const Names = ({ filteredVarietals }) => {
     setSelectedReds(displayedReds)
   }, [filteredVarietals])
 
+  const filterLinksColor = (filteredVarietals, color) => {
+    const filteredByColor = filteredVarietals.filter(varietal => varietal.color === color).map(varietal => varietal.name)
+
+    return createLinks(filteredByColor)
+  }
+
 }
 
 export default Names
