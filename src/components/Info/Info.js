@@ -30,7 +30,28 @@ const Info = ({ varietalName }) => {
     }
   }, [chosenVarietal])
 
-  
+  return (
+    <>
+    {chosenVarietal && similarVarietals ?
+    <section>
+      <Link to='/'>
+        <button>Return to All Varietals</button>
+      </Link>
+      <h2>{chosenVarietal.name}</h2>
+      <p>Color - {chosenVarietal.color}</p>
+      <p>Typical Acidity Levels - {chosenVarietal.acidity.join(' | ')}</p>
+      <p>Typical Body - {chosenVarietal.body.join(' | ')}</p>
+      {chosenVarietal.color === 'red' && <p>Typical Tannin Levels - {chosenVarietal.tannin.join(' | ')}</p>}
+      <p>Other - {chosenVarietal.floral === 'yes' && 'floral | '} {chosenVarietal.minerality === 'yes' && 'minerality | '}{chosenVarietal.oak === 'yes' && 'oaky'}</p>
+      <p>Similiar Varietals to {chosenVarietal.name} - </p>
+      <ul>
+        {similarVarietals}
+      </ul>
+      <Recipes chosenVarietal={chosenVarietal} />
+    </section>
+    : <Error />}
+    </>
+  )
 }
 
 export default Info
