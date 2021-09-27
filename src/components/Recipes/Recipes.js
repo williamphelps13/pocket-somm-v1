@@ -25,6 +25,27 @@ const Recipes = ({ chosenVarietal }) => {
       .catch(error => setRecipeError(error.message))
   }
 
+  const displayRecipes = (pairings) => {
+    const recipes = pairings.map((recipe, index) => {
+      const list = recipe.ingredients.map((ingredient, index) => <li key={index}>{ingredient}</li>)
+      return (
+        <article key={index}>
+          <h3>{recipe.name}</h3>
+          <img src={recipe.image} alt={recipe.name} />
+          <p>Source - <a href={recipe.url}>{recipe.source}</a></p>
+          <p>{recipe.serves}</p>
+          <p>{recipe.time}</p>
+          <p>Ingredients - </p>
+          <ul>
+              {list}
+          </ul>
+        </article>
+        )
+    })
+    
+    setRecipes(recipes)
+  }
+
   
 }
 
