@@ -72,7 +72,38 @@ const Filter = ({ displayNames }) => {
         <input type='radio' name='red' value='red' onChange={handleChange} ></input>
         <label>Yes</label>
       </section>
+      <section>
+        <h2>Wine Structure</h2>
+        <h3>Acidity</h3>
+        <input type='radio' name='acidity' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='acidity' value='low' onChange={handleChange} ></input>
+        <label>Low</label>
+        <input type='radio' name='acidity' value='medium' onChange={handleChange} ></input>
+        <label>Medium</label>
+        <input type='radio' name='acidity' value='high' onChange={handleChange} ></input>
+        <label>High</label>
+        <h3>Body</h3>
+        <input type='radio' name='body' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='body' value='light' onChange={handleChange} ></input>
+        <label>Light</label>
+        <input type='radio' name='body' value='medium' onChange={handleChange} ></input>
+        <label>Medium</label>
+        <input type='radio' name='body' value='full' onChange={handleChange} ></input>
+        <label>Full</label>
+        <h3>Tannin - Only Narrows Red Varietals</h3>
+        <input type='radio' name='tannin' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='tannin' value='low' onChange={handleChange} ></input>
+        <label>Low</label>
+        <input type='radio' name='tannin' value='medium' onChange={handleChange} ></input>
+        <label>Medium</label>
+        <input type='radio' name='tannin' value='high' onChange={handleChange} ></input>
+        <label>High</label>
+      </section>
       
+    </>
   )
 }
 
