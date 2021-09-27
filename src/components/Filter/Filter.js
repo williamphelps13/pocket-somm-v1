@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Filter.css'
 import { varietalDescriptions } from '../../data/varietal-descriptions'
 
-const Filter = ({ displayNames }) => {
+const Filter = ({ setFilteredVarietals }) => {
   const [wineTraitState, setWineTraitState] = useState({
     white: 'white', 
     red: 'red', 
@@ -53,7 +53,7 @@ const Filter = ({ displayNames }) => {
       }
     })
 
-    displayNames(filteredVarietals)
+    setFilteredVarietals(filteredVarietals)
 
   }, [white, red, acidity, body, tannin, oak, floral, minerality])
 
