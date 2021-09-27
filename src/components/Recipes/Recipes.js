@@ -60,7 +60,10 @@ const Recipes = ({ chosenVarietal }) => {
           )  
         })}
       </ul>
-      
+      <h3>Recipes for {currentKeyword} - </h3>
+      {!recipes && !recipeError && <h4>Loading...</h4>}
+      {recipeError && <h4>{recipeError}</h4>}
+      {recipes}
     </>
   )
 }
