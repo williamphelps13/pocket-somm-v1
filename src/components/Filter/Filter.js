@@ -102,7 +102,30 @@ const Filter = ({ displayNames }) => {
         <input type='radio' name='tannin' value='high' onChange={handleChange} ></input>
         <label>High</label>
       </section>
-      
+      <section>
+        <h2>Wine Tasting Notes</h2>
+        <h3>Oak</h3>
+        <input type='radio' name='oak' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='oak' value='no' onChange={handleChange} ></input>
+        <label>No</label>
+        <input type='radio' name='oak' value='yes' onChange={handleChange} ></input>
+        <label>Yes</label>
+        <h3>Floral</h3>
+        <input type='radio' name='floral' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='floral' value='no' onChange={handleChange} ></input>
+        <label>No</label>
+        <input type='radio' name='floral' value='yes' onChange={handleChange} ></input>
+        <label>Yes</label>
+        <h3>Minerality</h3>
+        <input type='radio' name='minerality' value='no preference' onChange={handleChange} ></input>
+        <label>No Preference</label>
+        <input type='radio' name='minerality' value='no' onChange={handleChange} ></input>
+        <label>No</label>
+        <input type='radio' name='minerality' value='yes' onChange={handleChange} ></input>
+        <label>Yes</label>
+      </section>
     </>
   )
 }
