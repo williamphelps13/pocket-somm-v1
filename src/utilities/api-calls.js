@@ -5,6 +5,13 @@ export const getRecipes = (pairing) => {
     .then(response => {
       if (response.ok) {
         return response.json()
+      } else if (response.status === 404) {
+        throw Error('Recipes not currently available - Destination not found (404 error).')
+      } else if (response.status === 500) {
+        throw Error('Recipes not currently available - Something on our end is not working right now (500 error).')
+      } else {
+      throw Error('Recipes not currently available - Something went wrong.')
+      }
     })
     .then(data => cleanRecipeData(data))
 }
