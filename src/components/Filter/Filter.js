@@ -16,6 +16,10 @@ const Filter = ({ displayNames }) => {
 
   const {white, red, acidity, body, tannin, oak, floral, minerality} = wineTraitState
 
+  const handleChange = (event) => {
+    setWineTraitState(otherState => ({ ...otherState, [event.target.name]: event.target.value}))
+  }
+
   
 }
 
