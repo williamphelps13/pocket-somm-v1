@@ -30,6 +30,17 @@ const Names = ({ filteredVarietals }) => {
     })
   }
 
+  return (
+    <>
+      {selectedWhites.length > 0 &&
+        <section>
+          <p>{selectedWhites.length} / 10</p>
+          {selectedWhites}
+        </section>
+      }
+    
+    </>
+  )
 }
 
 export default Names
