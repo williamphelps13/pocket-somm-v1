@@ -14,6 +14,22 @@ const Info = ({ varietalName }) => {
     setChosenVarietal(possibleVarietal)
   }, [varietalName])
 
+  useEffect(() => {
+    if (chosenVarietal) {
+      const listSimilarVarietals = chosenVarietal.similarVarietals.map((name, index) => {
+        return (
+          <li key={index}> 
+            <Link to={`/${name}`}>
+              <button>{name}</button>
+            </Link>
+          </li>
+        )
+      })
+      
+      setSimilarVarietals(listSimilarVarietals)
+    }
+  }, [chosenVarietal])
+
   
 }
 
