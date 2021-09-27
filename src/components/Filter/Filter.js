@@ -57,6 +57,23 @@ const Filter = ({ displayNames }) => {
 
   }, [white, red, acidity, body, tannin, oak, floral, minerality])
 
+  return (
+    <>
+      <section>
+        <h2>Wine Color</h2>
+        <h3>White</h3>
+        <input type='radio' name='white' value='not white' onChange={handleChange} ></input>
+        <label>No</label>
+        <input type='radio' name='white' value='white' onChange={handleChange} ></input>
+        <label>Yes</label>
+        <h3>Red</h3>
+        <input type='radio' name='red' value='not red' onChange={handleChange} ></input>
+        <label>No</label>
+        <input type='radio' name='red' value='red' onChange={handleChange} ></input>
+        <label>Yes</label>
+      </section>
+      
+  )
 }
 
 export default Filter
