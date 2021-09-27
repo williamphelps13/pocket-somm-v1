@@ -8,6 +8,20 @@ import Info from '../Info/Info'
 const App = () => {
   const [filteredVarietals, setFilteredVarietals] = useState([])
 
-  
+  return (
+    <main>
+      <h1>Pocket Somm</h1>
+        <Route exact path='/' 
+          render={() =>
+            <section>
+              <Names filteredVarietals={filteredVarietals} />
+              <Filter setFilteredVarietals={setFilteredVarietals} />
+            </section>
+          }
+        />
+        
+    </main>
+  )
+}
 
 export default App
