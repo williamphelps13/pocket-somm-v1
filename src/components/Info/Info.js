@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { varietalDescriptions } from '../../data/varietal-descriptions'
 import Recipes from '../Recipes/Recipes'
 import Error from '../Error/Error'
+import PropTypes from 'prop-types';
 
 const Info = ({ varietalName }) => {
   const [chosenVarietal, setChosenVarietal] = useState('')
@@ -52,3 +53,7 @@ const Info = ({ varietalName }) => {
 }
 
 export default Info
+
+Info.propTypes = {
+  varietalName: PropTypes.string.isRequired
+};
