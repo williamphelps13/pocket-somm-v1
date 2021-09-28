@@ -7,32 +7,29 @@ import Error from '../Error/Error'
 
 const Info = ({ varietalName }) => {
   const [chosenVarietal, setChosenVarietal] = useState('')
-  const [similarVarietals, setSimilarVarietals] = useState('')
 
   useEffect(() => {
     const possibleVarietal = varietalDescriptions.find(varietal => varietal.name === varietalName)
     setChosenVarietal(possibleVarietal)
   }, [varietalName])
+   
+  let listSimilarVarietals
 
-  useEffect(() => {
-    if (chosenVarietal) {
-      const listSimilarVarietals = chosenVarietal.similarVarietals.map((name, index) => {
-        return (
-          <li key={index}> 
-            <Link to={`/${name}`}>
-              <button>{name}</button>
-            </Link>
-          </li>
-        )
-      })
-      
-      setSimilarVarietals(listSimilarVarietals)
-    }
-  }, [chosenVarietal])
-
+  if (chosenVarietal) {
+    listSimilarVarietals = chosenVarietal.similarVarietals.map((name, index) => {
+      return (
+        <li key={index}> 
+          <Link to={`/${name}`}>
+            <button>{name}</button>
+          </Link>
+        </li>
+      )
+    })
+  }
+    
   return (
     <>
-    {chosenVarietal && similarVarietals ?
+    {chosenVarietal ?
     <section>
       <Link to='/'>
         <button>Return to All Varietals</button>
@@ -45,7 +42,7 @@ const Info = ({ varietalName }) => {
       <p>Other - {chosenVarietal.floral === 'yes' && 'floral | '} {chosenVarietal.minerality === 'yes' && 'minerality | '}{chosenVarietal.oak === 'yes' && 'oaky'}</p>
       <p>Similiar Varietals to {chosenVarietal.name} - </p>
       <ul>
-        {similarVarietals}
+        {listSimilarVarietals}
       </ul>
       <Recipes chosenVarietal={chosenVarietal} />
     </section>
