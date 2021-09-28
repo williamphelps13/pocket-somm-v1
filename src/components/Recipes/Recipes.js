@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Recipes.css'
 import { getRecipes } from '../../utilities/api-calls'
+import PropTypes from 'prop-types';
 
 const Recipes = ({ chosenVarietal }) => {
   const [currentKeyword, setCurrentKeyword] = useState('')
@@ -13,6 +14,20 @@ const Recipes = ({ chosenVarietal }) => {
     }
   }, [chosenVarietal])
 
+  let possiblePairings
+
+  if (chosenVarietal) {
+    possiblePairings = chosenVarietal.pairingPossibilities.map((pairingKeyword, index) => {
+      return (
+        <li key={index}> 
+          <button value={pairingKeyword} onClick={event => getPairings(pairingKeyword)}>
+            {pairingKeyword}
+          </button>
+        </li>
+      )  
+    })
+  }
+  
   const getPairings = (pairingKeyword) => {
     setRecipes('')
     setCurrentKeyword(pairingKeyword.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase()))
@@ -30,7 +45,7 @@ const Recipes = ({ chosenVarietal }) => {
       const list = recipe.ingredients.map((ingredient, index) => <li key={index}>{ingredient}</li>)
       return (
         <article key={index}>
-          <h3>{recipe.name}</h3>
+          <h4 className='recipe-name'>{recipe.name}</h4>
           <img src={recipe.image} alt={recipe.name} />
           <p>Source - <a href={recipe.url}>{recipe.source}</a></p>
           <p>{recipe.serves}</p>
@@ -50,22 +65,18 @@ const Recipes = ({ chosenVarietal }) => {
     <>
       <p>Favorite Pairings - Click to See Recipe Category (Currently {currentKeyword}) </p>
       <ul>
-        {chosenVarietal.pairingPossibilities.map((pairingKeyword, index) => {
-          return (
-            <li key={index}> 
-              <button value={pairingKeyword} onClick={event => getPairings(pairingKeyword)}>
-                {pairingKeyword}
-              </button>
-            </li>
-          )  
-        })}
+        {possiblePairings}
       </ul>
-      <h3>Recipes for {currentKeyword} - </h3>
+      <h3 className='recipe-heading'>Recipes for {currentKeyword} - </h3>
       {!recipes && !recipeError && <h4>Loading...</h4>}
-      {recipeError && <h4>{recipeError}</h4>}
+      {recipeError && <h4 className='recipe-error'>{recipeError}</h4>}
       {recipes}
     </>
   )
 }
 
 export default Recipes
+
+Recipes.propTypes = {
+  chosenVarietal: PropTypes.object.isRequired
+};

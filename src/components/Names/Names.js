@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Names.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 const Names = ({ filteredVarietals }) => {
   const [selectedWhites, setSelectedWhites] = useState([])
@@ -17,14 +18,14 @@ const Names = ({ filteredVarietals }) => {
   const filterLinksColor = (filteredVarietals, color) => {
     const filteredByColor = filteredVarietals.filter(varietal => varietal.color === color).map(varietal => varietal.name)
 
-    return createLinks(filteredByColor)
+    return createLinks(filteredByColor, color)
   }
 
-  const createLinks = (filteredByColor) => {
+  const createLinks = (filteredByColor, color) => {
     return filteredByColor.map((name, index) => {
       return (
         <Link to={`/${name}`} key={index}>
-          <button>{name}</button>
+          <button className={`varietal-button ${index}-${color}`}>{name}</button>
         </Link>
       )
     })
@@ -34,14 +35,14 @@ const Names = ({ filteredVarietals }) => {
     <>
       {selectedWhites.length > 0 &&
         <section>
-          <p>{selectedWhites.length} / 10</p>
+          <p className='whites-left'>Whites Remaining - {selectedWhites.length} / 10</p>
           {selectedWhites}
         </section>
       }
     
       {selectedReds.length > 0 &&
           <section>
-            <p>{selectedReds.length} / 17</p>
+            <p className='reds-left'>Reds Remaining - {selectedReds.length} / 17</p>
             {selectedReds}
           </section>
         }
@@ -50,3 +51,7 @@ const Names = ({ filteredVarietals }) => {
 }
 
 export default Names
+
+Names.propTypes = {
+  filteredVarietals: PropTypes.arrayOf(PropTypes.object).isRequired
+};
