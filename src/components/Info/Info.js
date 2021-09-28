@@ -20,7 +20,7 @@ const Info = ({ varietalName }) => {
       return (
         <li key={index}> 
           <Link to={`/${name}`}>
-            <button>{name}</button>
+            <button className={`${index}Similar`}>{name}</button>
           </Link>
         </li>
       )
@@ -32,15 +32,15 @@ const Info = ({ varietalName }) => {
     {chosenVarietal ?
     <section>
       <Link to='/'>
-        <button>Return to All Varietals</button>
+        <button className='return'>Return to All Varietals</button>
       </Link>
       <h2>{chosenVarietal.name}</h2>
-      <p>Color - {chosenVarietal.color}</p>
-      <p>Typical Acidity Levels - {chosenVarietal.acidity.join(' | ')}</p>
-      <p>Typical Body - {chosenVarietal.body.join(' | ')}</p>
-      {chosenVarietal.color === 'red' && <p>Typical Tannin Levels - {chosenVarietal.tannin.join(' | ')}</p>}
-      <p>Other - {chosenVarietal.floral === 'yes' && 'floral | '} {chosenVarietal.minerality === 'yes' && 'minerality | '}{chosenVarietal.oak === 'yes' && 'oaky'}</p>
-      <p>Similiar Varietals to {chosenVarietal.name} - </p>
+      <p className='colorInfo'>Color - {chosenVarietal.color}</p>
+      <p className='acidityInfo'>Typical Acidity Levels - {chosenVarietal.acidity.join(' | ')}</p>
+      <p className='bodyInfo'>Typical Body - {chosenVarietal.body.join(' | ')}</p>
+      {chosenVarietal.color === 'red' && <p className='tanninInfo'>Typical Tannin Levels - {chosenVarietal.tannin.join(' | ')}</p>}
+      <p className='otherInfo'>Other - {chosenVarietal.floral === 'yes' && 'floral | '} {chosenVarietal.minerality === 'yes' && 'minerality | '}{chosenVarietal.oak === 'yes' && 'oaky'}</p>
+      <p className='similarVarietalsInfo'>Similiar Varietals to {chosenVarietal.name} - </p>
       <ul>
         {listSimilarVarietals}
       </ul>
