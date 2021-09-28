@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Filter.css'
 import { varietalDescriptions } from '../../data/varietal-descriptions'
+import PropTypes from 'prop-types';
 
 const Filter = ({ setFilteredVarietals }) => {
   const [wineTraitState, setWineTraitState] = useState({
@@ -131,3 +132,7 @@ const Filter = ({ setFilteredVarietals }) => {
 }
 
 export default Filter
+
+Filter.propTypes = {
+  setFilteredVarietals: PropTypes.func.isRequired
+}
