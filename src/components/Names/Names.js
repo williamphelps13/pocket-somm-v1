@@ -17,14 +17,14 @@ const Names = ({ filteredVarietals }) => {
   const filterLinksColor = (filteredVarietals, color) => {
     const filteredByColor = filteredVarietals.filter(varietal => varietal.color === color).map(varietal => varietal.name)
 
-    return createLinks(filteredByColor)
+    return createLinks(filteredByColor, color)
   }
 
-  const createLinks = (filteredByColor) => {
+  const createLinks = (filteredByColor, color) => {
     return filteredByColor.map((name, index) => {
       return (
         <Link to={`/${name}`} key={index}>
-          <button>{name}</button>
+          <button className={`varietalButton ${index}${color}`}>{name}</button>
         </Link>
       )
     })
