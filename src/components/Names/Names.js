@@ -34,14 +34,14 @@ const Names = ({ filteredVarietals }) => {
     <>
       {selectedWhites.length > 0 &&
         <section>
-          <p>{selectedWhites.length} / 10</p>
+          <p className='whitesLeft'>Whites Remaining - {selectedWhites.length} / 10</p>
           {selectedWhites}
         </section>
       }
     
       {selectedReds.length > 0 &&
           <section>
-            <p>{selectedReds.length} / 17</p>
+            <p className='redsLeft'>Reds Remaining - {selectedReds.length} / 17</p>
             {selectedReds}
           </section>
         }
