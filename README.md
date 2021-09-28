@@ -17,11 +17,11 @@ https://pocket-somm.surge.sh/
 https://github.com/williamphelps13/pocket-somm
 
 ## Demo
-![Main Page](<img width="1080" alt="Screen Shot 2021-09-27 at 10 27 30 PM" src="https://user-images.githubusercontent.com/22990386/135023290-5a2c1f61-e27f-4bc4-977b-84c94000eaec.png">)
+![Main Page]("https://user-images.githubusercontent.com/22990386/135023290-5a2c1f61-e27f-4bc4-977b-84c94000eaec.png")
 
-![Varietal Page](<img width="750" alt="Screen Shot 2021-09-27 at 10 27 56 PM" src="https://user images.githubusercontent.com/22990386/135023284-0ad65184-68c1-4d43-91df-d3ea91f1c482.png">) 
+![Varietal Page]("https://user images.githubusercontent.com/22990386/135023284-0ad65184-68c1-4d43-91df-d3ea91f1c482.png") 
 
-![Recipe Fetch Error](<img width="754" alt="Screen Shot 2021-09-27 at 10 30 26 PM" src="https://user-images.githubusercontent.com/22990386/135023500-ccc08a2b-1188-4a77-863b-592d1703119a.png">)
+![Recipe Fetch Error]("https://user-images.githubusercontent.com/22990386/135023500-ccc08a2b-1188-4a77-863b-592d1703119a.png")
 
 ![Gif](https://user-images.githubusercontent.com/22990386/135023918-00ddb2ce-dd03-4b3a-8e8d-ee78311e0a93.gif)
 
