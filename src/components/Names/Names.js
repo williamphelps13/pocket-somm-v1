@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Names.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 const Names = ({ filteredVarietals }) => {
   const [selectedWhites, setSelectedWhites] = useState([])
@@ -50,3 +51,7 @@ const Names = ({ filteredVarietals }) => {
 }
 
 export default Names
+
+Names.propTypes = {
+  filteredVarietals: PropTypes.arrayOf(PropTypes.object).isRequired
+};
