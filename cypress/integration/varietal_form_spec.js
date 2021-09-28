@@ -29,31 +29,31 @@ describe('Varietal Form Page', () => {
   });
 
   it('Should be able to render the whites remaining heading', () => {
-    cy.get('.whitesLeft')
+    cy.get('.whites-left')
       .contains('Whites Remaining')
   });
 
   it('Should be able to render the reds remaining heading', () => {
-    cy.get('.redsLeft')
+    cy.get('.reds-left')
       .contains('Reds Remaining')
   });
 
   it('Whites remaining should not be visble when no whites is selected', () => {
     cy.get('input[value="not white"]')
       .click()
-    cy.get('.whitesLeft')
+    cy.get('.whites-left')
       .should('not.exist')
   });
 
   it('Reds remaining should not be visble when no reds is selected', () => {
     cy.get('input[value="not red"]')
       .click()
-    cy.get('.redsLeft')
+    cy.get('.reds-left')
       .should('not.exist')
   });
 
   it('Should be able to render all 27 varietal buttons', () => {
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
   });
@@ -100,7 +100,7 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when white yes is selected', () => {
     cy.get('input[name="white"][value="white"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
   })
@@ -108,7 +108,7 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when red yes is selected', () => {
     cy.get('input[name="red"][value="red"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
   })
@@ -116,22 +116,22 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different acidity inputs are selected', () => {
     cy.get('input[name="acidity"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="acidity"][value="low"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 2)
     cy.get('input[name="acidity"][value="medium"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 15)
     cy.get('input[name="acidity"][value="high"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 13)
   });
@@ -139,22 +139,22 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different body inputs are selected', () => {
     cy.get('input[name="body"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="body"][value="light"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 8)
     cy.get('input[name="body"][value="medium"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 18)
     cy.get('input[name="body"][value="full"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 12)
   });
@@ -162,22 +162,22 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different tannin inputs are selected', () => {
     cy.get('input[name="tannin"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="tannin"][value="low"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 15)
     cy.get('input[name="tannin"][value="medium"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 22)
     cy.get('input[name="tannin"][value="high"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 16)
   });
@@ -185,17 +185,17 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different oak inputs are selected', () => {
     cy.get('input[name="oak"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="oak"][value="no"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 9)
     cy.get('input[name="oak"][value="yes"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 18)
   });
@@ -203,17 +203,17 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different floral inputs are selected', () => {
     cy.get('input[name="floral"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="floral"][value="no"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 4)
     cy.get('input[name="floral"][value="yes"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 23)
   });
@@ -221,17 +221,17 @@ describe('Varietal Form Page', () => {
   it('Should be able to render the correct number of varietals when the different minerality inputs are selected', () => {
     cy.get('input[name="minerality"][value="no preference"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
     cy.get('input[name="minerality"][value="no"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 8)
     cy.get('input[name="minerality"][value="yes"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 19)
   });
@@ -253,7 +253,7 @@ describe('Varietal Form Page', () => {
       .click()
     cy.get('input[name="minerality"][value="yes"]')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 1)
   });
@@ -263,7 +263,7 @@ describe('Varietal Form Page', () => {
       statusCode: 201,
       fixture: '../fixtures/recipe_test_data.json',
     })
-    cy.get('.0white')
+    cy.get('.0-white')
       .click()
     cy.get('h2')
       .contains('Albarino')
@@ -274,8 +274,24 @@ describe('Varietal Form Page', () => {
       statusCode: 201,
       fixture: '../fixtures/recipe_test_data.json',
     })
-    cy.get('.0white')
+    cy.get('.0-white')
       .click()
     cy.url().should('eq', 'http://localhost:3000/Albarino')
   });
+
+  it('Should be able to click heading with no change in page', () => {
+    cy.get('h1')
+      .click()
+    cy.get('.varietal-button')
+      .its('length')
+      .should('eq', 27)
+  });
+
+  it('Should be able to click background with no change in page', () => {
+    cy.get('.form-container')
+      .click()
+    cy.get('.varietal-button')
+      .its('length')
+      .should('eq', 27)
+    });
 })

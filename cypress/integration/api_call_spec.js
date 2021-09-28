@@ -6,9 +6,9 @@ describe('API Calls Error Messages', () => {
       fixture: 'recipe_test_data.json',
     })
     cy.visit('http://localhost:3000')
-      .get('.0white')
+      .get('.0-white')
       .click()
-    cy.get('.recipeError')
+    cy.get('.recipe-error')
       .contains('Recipes not currently available - Destination not found (404 error).')
   })
 
@@ -18,9 +18,9 @@ describe('API Calls Error Messages', () => {
       fixture: 'recipe_test_data.json',
     })
     cy.visit('http://localhost:3000')
-      .get('.0white')
+      .get('.0-white')
       .click()
-    cy.get('.recipeError')
+    cy.get('.recipe-error')
       .contains('Recipes not currently available - Something on our end is not working right now (500 error).')
   })
 

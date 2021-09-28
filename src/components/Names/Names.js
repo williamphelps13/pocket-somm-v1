@@ -25,7 +25,7 @@ const Names = ({ filteredVarietals }) => {
     return filteredByColor.map((name, index) => {
       return (
         <Link to={`/${name}`} key={index}>
-          <button className={`varietalButton ${index}${color}`}>{name}</button>
+          <button className={`varietal-button ${index}-${color}`}>{name}</button>
         </Link>
       )
     })
@@ -35,14 +35,14 @@ const Names = ({ filteredVarietals }) => {
     <>
       {selectedWhites.length > 0 &&
         <section>
-          <p className='whitesLeft'>Whites Remaining - {selectedWhites.length} / 10</p>
+          <p className='whites-left'>Whites Remaining - {selectedWhites.length} / 10</p>
           {selectedWhites}
         </section>
       }
     
       {selectedReds.length > 0 &&
           <section>
-            <p className='redsLeft'>Reds Remaining - {selectedReds.length} / 17</p>
+            <p className='reds-left'>Reds Remaining - {selectedReds.length} / 17</p>
             {selectedReds}
           </section>
         }

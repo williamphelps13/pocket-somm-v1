@@ -5,7 +5,7 @@ describe('Chosen Varietal Page', () => {
       fixture: '../fixtures/recipe_test_data.json'
     })
     cy.visit('http://localhost:3000')
-      .get('.0white')
+      .get('.0-white')
       .click()
   })
 
@@ -36,7 +36,7 @@ describe('Chosen Varietal Page', () => {
   it('Should be able to click the Return to All Varietals button and return to the varietal form page', () => {
     cy.get('.return')
       .click()
-    cy.get('.varietalButton')
+    cy.get('.varietal-button')
       .its('length')
       .should('eq', 27)
   });
@@ -47,32 +47,32 @@ describe('Chosen Varietal Page', () => {
   });
 
   it('Should be able to render the chosen varietal color', () => {
-    cy.get('.colorInfo')
+    cy.get('.color-info')
       .contains('Color - white')
   });
 
   it('Should be able to render the chosen varietal typical acidity levels', () => {
-    cy.get('.acidityInfo')
+    cy.get('.acidity-info')
       .contains('Typical Acidity Levels - medium plus')
   });
 
   it('Should be able to render the chosen varietal typical body', () => {
-    cy.get('.bodyInfo')
+    cy.get('.body-info')
       .contains('Typical Body - light | medium')
   });
 
   it('Should not be able to render the chosen varietal tannin when the varietal is a white wine', () => {
-    cy.get('.tanninInfo')
+    cy.get('.tannin-info')
       .should('not.exist')
   });
 
   it('Should be able to render a recipe heading for the chosen varietal', () => {
-    cy.get('.recipeHeading')
+    cy.get('.recipe-heading')
       .contains('Recipes for Seafood -')
   });
 
   it('Should be able to render a recipe card for the chosen varietal', () => {
-    cy.get('.recipeName')
+    cy.get('.recipe-name')
       .contains('Chicken Vesuvio')
   });
 })

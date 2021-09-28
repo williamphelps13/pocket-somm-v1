@@ -15,7 +15,7 @@ const App = () => {
       <p className='key'>E - European countries | OE - Outside Europe</p>
         <Route exact path='/' 
           render={() =>
-            <section>
+            <section className='form-container'>
               <p className='directions'>Select a wine varietal to see immediate pairings or refine your current preferences with our selection guide</p>
               <Names filteredVarietals={filteredVarietals} />
               <Filter setFilteredVarietals={setFilteredVarietals} />
