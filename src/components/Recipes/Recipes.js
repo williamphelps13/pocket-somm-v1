@@ -44,7 +44,7 @@ const Recipes = ({ chosenVarietal }) => {
       const list = recipe.ingredients.map((ingredient, index) => <li key={index}>{ingredient}</li>)
       return (
         <article key={index}>
-          <h4>{recipe.name}</h4>
+          <h4 className='recipeName'>{recipe.name}</h4>
           <img src={recipe.image} alt={recipe.name} />
           <p>Source - <a href={recipe.url}>{recipe.source}</a></p>
           <p>{recipe.serves}</p>
@@ -62,13 +62,13 @@ const Recipes = ({ chosenVarietal }) => {
 
   return (
     <>
-      <p>Favorite Pairings - Click to See Recipe Category (Currently {currentKeyword}) </p>
+      <p className=''>Favorite Pairings - Click to See Recipe Category (Currently {currentKeyword}) </p>
       <ul>
         {possiblePairings}
       </ul>
-      <h3>Recipes for {currentKeyword} - </h3>
+      <h3 className='recipeHeading'>Recipes for {currentKeyword} - </h3>
       {!recipes && !recipeError && <h4>Loading...</h4>}
-      {recipeError && <h4>{recipeError}</h4>}
+      {recipeError && <h4 className='recipeError'>{recipeError}</h4>}
       {recipes}
     </>
   )
