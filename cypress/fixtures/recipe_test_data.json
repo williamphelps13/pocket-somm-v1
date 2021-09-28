@@ -1,0 +1,534 @@
+{
+  "from": 1,
+  "to": 20,
+  "count": 10000,
+  "_links": {
+    "next": {
+      "href": "https://api.edamam.com/api/recipes/v2?q=chicken&app_key=bc8343dc9b259018b578577a1e32eaaf&field=label&field=image&field=source&field=url&field=yield&field=ingredientLines&field=totalTime&_cont=CHcVQBtNNQphDmgVQntAEX4BYldtBAAGRmxGC2ERYVJ2BwoVX3cVBWQSY1EhBQcGEmNHVmMTYFEgDQQCFTNJBGQUMQZxVhFqX3cWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&type=public&app_id=533846ff",
+      "title": "Next page"
+    }
+  },
+  "hits": [
+    {
+      "recipe": {
+        "label": "Chicken Vesuvio",
+        "image": "https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg",
+        "source": "Serious Eats",
+        "url": "http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html",
+        "yield": 4,
+        "ingredientLines": [
+          "1/2 cup olive oil",
+          "5 cloves garlic, peeled",
+          "2 large russet potatoes, peeled and cut into chunks",
+          "1 3-4 pound chicken, cut into 8 pieces (or 3 pound chicken legs)",
+          "3/4 cup white wine",
+          "3/4 cup chicken stock",
+          "3 tablespoons chopped parsley",
+          "1 tablespoon dried oregano",
+          "Salt and pepper",
+          "1 cup frozen peas, thawed"
+        ],
+        "totalTime": 60
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/b79327d05b8e5b838ad6cfd9576b30b6?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Paprikash",
+        "image": "https://www.edamam.com/web-img/e12/e12b8c5581226d7639168f41d126f2ff.jpg",
+        "source": "No Recipes",
+        "url": "http://norecipes.com/recipe/chicken-paprikash/",
+        "yield": 4,
+        "ingredientLines": [
+          "640 grams chicken - drumsticks and thighs ( 3 whole chicken legs cut apart)",
+          "1/2 teaspoon salt",
+          "1/4 teaspoon black pepper",
+          "1 tablespoon butter – cultured unsalted (or olive oil)",
+          "240 grams onion sliced thin (1 large onion)",
+          "70 grams Anaheim pepper chopped (1 large pepper)",
+          "25 grams paprika (about 1/4 cup)",
+          "1 cup chicken stock",
+          "1/2 teaspoon salt",
+          "1/2 cup sour cream",
+          "1 tablespoon flour – all-purpose"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/8275bb28647abcedef0baaf2dcf34f8b?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Baked Chicken",
+        "image": "https://www.edamam.com/web-img/01c/01cacb70890274fb7b7cebb975a93231.jpg",
+        "source": "Martha Stewart",
+        "url": "http://www.marthastewart.com/318981/baked-chicken",
+        "yield": 4,
+        "ingredientLines": [
+          "6 bone-in chicken breast halves, or 6 chicken thighs and wings, skin-on",
+          "1/2 teaspoon coarse salt",
+          "1/2 teaspoon Mrs. Dash seasoning",
+          "1/4 teaspoon freshly ground black pepper"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/be3ba087e212f13672b553ecfa876333?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Catalan Chicken",
+        "image": "https://www.edamam.com/web-img/4d9/4d9084cbc170789caa9e997108b595de.jpg",
+        "source": "Bon Appetit",
+        "url": "http://www.bonappetit.com/columns/breadwinner/article/how-to-get-your-kids-to-eat-sauce-let-them-cook-it-themselves",
+        "yield": 14,
+        "ingredientLines": [
+          "1 whole 4-pound chicken, quartered",
+          "8 slices bacon",
+          "30 cloves garlic",
+          "3 lemons, peeled, rinds thinly sliced and reserved",
+          "½ cup Banyuls or another fortified dessert wine",
+          "1 cup veal or chicken stock"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/2463f2482609d7a471dbbf3b268bd956?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Persian Chicken",
+        "image": "https://www.edamam.com/web-img/8f8/8f810dfe198fa3e520d291f3fcf62bbf.jpg",
+        "source": "BBC Good Food",
+        "url": "http://www.bbcgoodfood.com/recipes/7343/",
+        "yield": 5,
+        "ingredientLines": [
+          "2 large onions",
+          "750 g chicken",
+          "500 g mushrooms",
+          "1 cup water",
+          "1 cup red wine",
+          "2 teaspoons chicken stock",
+          "200 ml mayonnaise",
+          "200 ml cream",
+          "small bunch of parsley",
+          "1 teaspoon curry powder"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/4caf01683bf99ddc7c08c35774aae54c?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Stew",
+        "image": "https://www.edamam.com/web-img/74b/74bfb16655500083c4af92bcf45889f7.jpg",
+        "source": "Food52",
+        "url": "https://food52.com/recipes/83097-chicken-stew",
+        "yield": 4,
+        "ingredientLines": [
+          "1 pound chicken cut in pieces",
+          "4 carrots",
+          "1 onion",
+          "1 leek",
+          "1 green pepper",
+          "kosher salt",
+          "Freshly ground black pepper",
+          "Extra Virgin Olive Oil",
+          "1 cup white wine",
+          "Chicken broth"
+        ],
+        "totalTime": 70
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a7c379c59775dd0c7c88710f7fecff81?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Roast Chicken",
+        "image": "https://www.edamam.com/web-img/25f/25feccd2eed4722604be4a9ffa1ac768.jpg",
+        "source": "San Francisco Gate",
+        "url": "http://www.sfgate.com/food/recipes/detail.html?rid=18229&sorig=qs",
+        "yield": 10,
+        "ingredientLines": [
+          "1 whole chicken, about 3-4 pounds",
+          "-- Salt and fresh-ground pepper, to taste",
+          "3 to 4 sprigs thyme, or other herbs",
+          "-- Olive oil, to taste",
+          "-- Chicken stock (optional)"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/690c3797b4f56fc1e119c14096d651c5?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Liver Pâté",
+        "image": "https://www.edamam.com/web-img/480/480000e79dbdd4648c4acd65630ff654.jpg",
+        "source": "Saveur",
+        "url": "http://www.saveur.com/article/Recipes/Classic-Chicken-Pate",
+        "yield": 6,
+        "ingredientLines": [
+          "8 oz. chicken livers, cleaned",
+          "4 cups chicken stock",
+          "2 tbsp. rendered chicken fat or unsalted butter",
+          "½ medium yellow onion, minced",
+          "1½ tbsp. cognac or brandy",
+          "2 hard-boiled eggs",
+          "Kosher salt and freshly ground black pepper, to taste",
+          "Toast points, for serving"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9ca0499f2ac7f1e4cae63bdf4671c1b3?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Kreplach (Chicken Dumplings)",
+        "image": "https://www.edamam.com/web-img/4dd/4dd1c7a0d8b00e8929bd6babf0968ba2.jpg",
+        "source": "Tasting Table",
+        "url": "https://www.tastingtable.com/entry_detail/chefs_recipes/10154/Matzo_balls_watch_your_back.htm",
+        "yield": 8,
+        "ingredientLines": [
+          "1½ teaspoons canola oil",
+          "½ small shallot, finely chopped",
+          "1 cup (about ½ pound) raw, boneless chicken meat (preferably from 3 boneless chicken thighs), roughly chopped",
+          "⅔ cup (about ¼ pound) chicken skin and fat (reserved from the 3 chicken thighs)",
+          "2 chicken livers (optional)",
+          "2 garlic cloves, finely chopped",
+          "¼ cup finely chopped chives, plus extra for serving",
+          "1¼ teaspoons kosher salt",
+          "¾ teaspoon freshly ground black pepper",
+          "30 to 34 square wonton wrappers",
+          "8 cups store-bought or homemade chicken broth"
+        ],
+        "totalTime": 10
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/1817e7fccea9ae39d09c0e2c7fb86cb2?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken cacciatore",
+        "image": "https://www.edamam.com/web-img/2ca/2ca946a40338e9b93c1d14dec518e1b8.jpg",
+        "source": "BBC",
+        "url": "http://www.bbc.co.uk/food/recipes/chickenalocacciatore_70349",
+        "yield": 6,
+        "ingredientLines": [
+          "8 tbsp olive oil",
+          "1 onion, sliced",
+          "2 celery stalks, roughly chopped",
+          "2 medium carrots, roughly chopped",
+          "6 chicken breasts, or chicken thighs, bones removed",
+          "175ml/6fl oz white wine",
+          "3 tbsp tomato purée",
+          "500ml/17 fl oz chicken stock",
+          "2 bay leaves",
+          "2-3 sage leaves",
+          "1 rosemary sprig",
+          "250g/9oz easy-cook polenta",
+          "Knob of butter",
+          "25g/1oz parmesan"
+        ],
+        "totalTime": 60
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a6ee2e431ba83557209f48e1cf194f2f?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Soup",
+        "image": "https://www.edamam.com/web-img/e20/e20d522d53088284fc5a31f365cbdebd.jpg",
+        "source": "Cookstr",
+        "url": "http://www.cookstr.com/recipes/chicken-soup-3-sharon-lebewohl",
+        "yield": 8,
+        "ingredientLines": [
+          "1 pound chicken parts",
+          "2 stalks celery, including leafy tops, cut into 3-inch pieces",
+          "1 whole chicken, thoroughly rinsed",
+          "Salt to rub inside the chicken",
+          "1 large whole onion, unpeeled (find one with a firm, golden-brown peel)",
+          "1 large whole carrot, peeled",
+          "1 medium parsnip, peeled",
+          "2 teaspoons salt",
+          "¼ teaspoon pepper",
+          "1 bunch dill, cleaned and tied with a string"
+        ],
+        "totalTime": 120
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/1da54064d59fe6e63b11823593ae6dc2?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Roast Chicken With Chicken Livers",
+        "image": "https://www.edamam.com/web-img/b32/b324978429b9e75525848eae95912c73.jpg",
+        "source": "Food & Wine",
+        "url": "http://www.foodandwine.com/recipes/roast-chicken-with-chicken-livers",
+        "yield": 12,
+        "ingredientLines": [
+          "One 3 3/4- to 4-pound chicken",
+          "1 teaspoon coarsely chopped thyme",
+          "Salt",
+          "1/2 cup extra-virgin olive oil",
+          "20 garlic cloves, peeled",
+          "2 teaspoons coarsely crushed black peppercorns",
+          "1/4 pound chicken livers, trimmed and cut into 1-inch pieces",
+          "Freshly ground pepper",
+          "2 tablespoons chopped Gaeta olives",
+          "1 tablespoon minced flat-leaf parsley"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/7879614ad1d3687818ba7a494ef0bab9?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Vesuvio",
+        "image": "https://www.edamam.com/web-img/85c/85c7885563809941210ad7180fcd2c54.jpg",
+        "source": "PBS Food",
+        "url": "http://www.pbs.org/food/recipes/chicken-vesuvio/",
+        "yield": 6,
+        "ingredientLines": [
+          "3 tablespoons olive oil",
+          "4 - 4 oz. boneless skinless chicken breasts, pounded and lightly floured",
+          "2 tablespoons chopped garlic",
+          "1/4 cup dry white wine",
+          "1/8 cup chicken stock",
+          "2 ounces salted butter",
+          "8 ounces cooked rotini"
+        ],
+        "totalTime": 150
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9b6f45c3bcb793ba4663ee4c712d7759?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Smothered Chicken",
+        "image": "https://www.edamam.com/web-img/65a/65a7ad1b644869cd901aafd23aa3bf11.jpeg",
+        "source": "Food Network",
+        "url": "https://www.foodnetwork.com/recipes/sandra-lee/smothered-chicken-recipe-1950282",
+        "yield": 4,
+        "ingredientLines": [
+          "3 1/2 pounds whole cut-up chicken",
+          "2 (5-ounce) packets chicken fry coating (recommended: Dixie Fry)",
+          "2 tablespoons salt-free chicken seasoning, divided (recommended: McCormick Grill Mates)",
+          "Canola oil, for frying",
+          "2 (12-ounce) jars roasted chicken gravy (recommended: Franco American)",
+          "1 teaspoon crushed garlic"
+        ],
+        "totalTime": 50
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/b4dadfbd094da0086d5759f92e9db359?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken & peppers",
+        "image": "https://www.edamam.com/web-img/adf/adf0d1e50d6ab82c373984230682fb3e.jpg",
+        "source": "The Stone Soup",
+        "url": "http://thestonesoup.com/blog/2012/05/the-1-thing-you-should-never-do-when-combining-flavours/",
+        "yield": 2,
+        "ingredientLines": [
+          "4-6 chicken drumsticks",
+          "2-3 large red capsicum (bell peppers), chopped"
+        ],
+        "totalTime": 130
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/45adb4461e9a05cb82f436b9ea4cdcbd?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Hash",
+        "image": "https://www.edamam.com/web-img/b50/b500b287cd791d8c431bbd9c504f7e80.jpg",
+        "source": "Delish",
+        "url": "http://www.delish.com/cooking/recipe-ideas/recipes/a33713/chicken-hash-recipe-122305/",
+        "yield": 4,
+        "ingredientLines": [
+          "1 tbsp. oil",
+          "2 large baked potatoes",
+          "2 c. shredded cooked chicken",
+          "3 medium carrots",
+          "1 medium onion",
+          "1 jar chicken gravy"
+        ],
+        "totalTime": 25
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/0806132207b0892f5670d9d70078c694?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Southwestern Chicken Soup",
+        "image": "https://www.edamam.com/web-img/216/216f2d87bd0921a4059ca89aeecad473.jpg",
+        "source": "Real Simple",
+        "url": "https://www.realsimple.com/food-recipes/browse-all-recipes/southwestern-chicken-soup",
+        "yield": 4,
+        "ingredientLines": [
+          "1 12-ounce jar salsa verde",
+          "3 cups cooked chicken pieces (1 small deli-counter rotisserie chicken or leftovers)",
+          "1 15-ounce can cannellini beans, drained",
+          "3 cups chicken broth",
+          "1 teaspoon ground cumin (optional)",
+          "2 green onions, chopped",
+          "1/2 cup sour cream",
+          "tortilla chips (optional)"
+        ],
+        "totalTime": 15
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/6379680892262fe72b7daf2cfcb24965?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Crispy Chicken Dippers",
+        "image": "https://www.edamam.com/web-img/c7b/c7bec34abe4f37580a4b5ffec912a956.jpg",
+        "source": "The Daily Meal",
+        "url": "http://www.thedailymeal.com/recipes/crispy-chicken-dippers-recipe",
+        "yield": 4,
+        "ingredientLines": [
+          "24 Ounces Tyson Crispy Chicken Strips",
+          "2 cans crescent rolls",
+          "21½ Ounces Cream of Chicken soup",
+          "½ Teaspoon pepper",
+          "16 baby carrots",
+          "16 sticks celery"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/8868b222a71cadfa850a188c6b9d2123?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Ultimate Roast Chicken",
+        "image": "https://www.edamam.com/web-img/f61/f61dcb579d45dcf7624346abd71eac1b.jpg",
+        "source": "My Recipes",
+        "url": "http://www.myrecipes.com/recipe/ultimate-roast-chicken",
+        "yield": 6,
+        "ingredientLines": [
+          "1 chicken, 3* to 4 1/2 lbs., lumps of fat and tail removed, rinsed and patted very dry",
+          "Fine sea salt (1 1/2 tsp. for a 3- to 3 3/4-lb. chicken or 2 tsp. for a 4- to 4 1/2-lb. chicken)",
+          "Pepper (3/4 tsp. for a smaller chicken or 1 tsp. for a larger one)",
+          "French Herb Seasoning Rub or",
+          "Mediterranean Coriander Seasoning Rub (optional)",
+          "About 1 tbsp. olive oil (for plain or French Herb chicken)"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/b8af944c52674f962ad4b9743b99423a?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Chicken Piccata",
+        "image": "https://www.edamam.com/web-img/ce0/ce0601eba5b5a77a2dcb359a0051c68c.jpg",
+        "source": "No Recipes",
+        "url": "http://norecipes.com/blog/chicken-piccata-recipe/",
+        "yield": 2,
+        "ingredientLines": [
+          "2 large chicken breasts",
+          "1/2 cup flour",
+          "3 tablespoons vegetable oil",
+          "2 scallions white part only, minced",
+          "3 tablespoons lemon juice",
+          "1 cup chicken stock",
+          "1 teaspoon honey",
+          "2 tablespoons unsalted butter cut into small pieces",
+          "2 tablespoons parsley minced",
+          "2 tablespoons capers",
+          "1 teaspoon lemon zest finely zested"
+        ],
+        "totalTime": 0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/10abfbc20e802c832453500bcc50e1bd?type=public&app_id=533846ff&app_key=bc8343dc9b259018b578577a1e32eaaf",
+          "title": "Self"
+        }
+      }
+    }
+  ]
+}
