@@ -1,5 +1,76 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "varietalDescriptions": [
+    {
+    "name": "Alb",
+    "color": "white",
+    "acidity": ["medium plus"],
+    "body": ["light", "medium"],
+    "tannin": [],
+    "oak": "no",
+    "floral": "yes",
+    "minerality": "yes",
+    "similarVarietals": ["Pinot Grigio", "Riesling", "Sauvignon Blanc (E)"],
+    "pairingPossibilities": ["seafood", "mussels", "shrimp", "roasted vegetables", "paella"]
+    },
+    {
+      "name": "Chard (E)",
+      "color": "white",
+      "acidity": ["medium", "medium plus", "high"],
+      "body": ["medium", "full"],
+      "tannin": [],
+      "oak": "yes",
+      "floral": "no",
+      "minerality": "yes",
+      "similarVarietals": ["Chenin Blanc", "Pinot Grigio"],
+      "pairingPossibilities": ["roasted chicken", "white fish", "lobster", "grilled salmon", "veal"]
+    },
+    {
+      "name": "Chard (OE)",
+      "color": "white",
+      "acidity": ["low", "medium minus", "medium"],
+      "body": ["medium", "full"],
+      "tannin": [],
+      "oak": "yes",
+      "floral": "no",
+      "minerality": "no",
+      "similarVarietals": ["Albarino", "Pinot Grigio"],
+      "pairingPossibilities": ["grilled salmon", "crab", "halibut", "mushrooms", "squash"]
+    },
+    {
+      "name": "Cab F",
+      "color": "red",
+      "acidity": ["medium plus", "high"],
+      "body": ["medium"],
+      "tannin": ["medium", "medium plus"],
+      "oak": "no",
+      "floral": "yes",
+      "minerality": "yes",
+      "similarVarietals": ["Cabernet Sauvignon (E)"],
+      "pairingPossibilities": ["roast beef", "lamb chops", "eggplant", "roast pork", "duck"]
+    },
+    {
+      "name": "Cab Sauv (E)",
+      "color": "red",
+      "acidity": ["medium", "medium plus"],
+      "body": ["medium plus", "full"],
+      "tannin": ["medium plus", "high"],
+      "oak": "yes",
+      "floral": "yes",
+      "minerality": "yes",
+      "similarVarietals": ["Cabernet Sauvignon (OE)", "Merlot (E)", "Sangiovese"],
+      "pairingPossibilities": ["prime rib", "blue cheese", "lamb", "steak"]
+    },
+    {
+      "name": "Cab Sauv (OE)",
+      "color": "red",
+      "acidity": ["medium", "medium plus"],
+      "body": ["full"],
+      "tannin": ["medium plus", "high"],
+      "oak": "yes",
+      "floral": "no",
+      "minerality": "no",
+      "similarVarietals": ["Malbec", "Merlot (OE)", "Syrah (OE)"],
+      "pairingPossibilities": ["hamburger", "gorgonzola", "dark chocolate", "steak", "rack of lamb"]
+    }
+  ]
 }
