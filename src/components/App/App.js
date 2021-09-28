@@ -16,7 +16,7 @@ const App = () => {
         <Route exact path='/' 
           render={() =>
             <section className='form-container'>
-              <p className='directions'>Select a wine varietal to see immediate pairings or refine your current preferences with our selection guide</p>
+              <p className='directions'>Select a wine varietal to see immediate pairings or refine your current preferences with our selection guide.</p>
               <Names filteredVarietals={filteredVarietals} />
               <Filter setFilteredVarietals={setFilteredVarietals} />
             </section>
